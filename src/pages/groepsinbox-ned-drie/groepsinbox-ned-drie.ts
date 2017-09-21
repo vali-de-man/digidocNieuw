@@ -1,3 +1,4 @@
+import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -41,11 +42,16 @@ export class GroepsinboxNedDriePage {
     console.log("Selected HWItem", HWitem);
     this.navCtrl.push("BurgerbriefNr_1Page");
   }
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GroepsinboxNedDriePage');
   }
 
+  public logout() {
+    this.auth.logout().subscribe(succ => {
+      this.navCtrl.setRoot('LoginPage')
+    });
+  }
 }

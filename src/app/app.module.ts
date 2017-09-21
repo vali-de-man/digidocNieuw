@@ -1,3 +1,5 @@
+import { LoginPageModule } from './../pages/login/login.module';
+import { LoginPage } from './../pages/login/login';
 import { AuthService } from './../providers/auth-service/auth-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -7,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
  
 import { MyApp } from './app.component';
 import { FavoriteProvider } from '../providers/favorite/favorite';
+
  
 @NgModule({
   declarations: [

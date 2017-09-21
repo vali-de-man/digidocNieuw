@@ -1,6 +1,8 @@
+import { App } from 'ionic-angular';
 import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 
 
 /**
@@ -14,19 +16,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-burgerbrief-nr-1',
   templateUrl: 'burgerbrief-nr-1.html',
+  providers: [AuthService]
 })
 export class BurgerbriefNr_1Page {
 
-  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private app: App, private auth: AuthService, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BurgerbriefNr_1Page');
   }
 
+
+
   public logout() {
     this.auth.logout().subscribe(succ => {
-      this.navCtrl.setRoot('LoginPage')
+      this.app.getRootNav().setRoot("LoginPage");
     });
   }
+
 }
