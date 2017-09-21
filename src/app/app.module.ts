@@ -1,5 +1,3 @@
-import { LoginPageModule } from './../pages/login/login.module';
-import { LoginPage } from './../pages/login/login';
 import { AuthService } from './../providers/auth-service/auth-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
