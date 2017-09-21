@@ -21,6 +21,15 @@ export class HomePage {
     this.nav.setRoot('TabsPage');
   }
 
+  public gaDoor2(){
+    this.nav.setRoot('DesktoplayoutPage');
+  }
+   public gaDoor3(){
+    this.nav.setRoot('AndereDesktoplayoutPage');
+  }
+   public gaDoor4(){
+    this.nav.setRoot('GridlayoutPage');
+  }
   public logout() {
     this.auth.logout().subscribe(succ => {
       this.nav.setRoot('LoginPage')

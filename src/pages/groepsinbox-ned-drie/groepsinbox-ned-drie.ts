@@ -45,13 +45,13 @@ export class GroepsinboxNedDriePage {
   constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad GroepsinboxNedDriePage');
+  }
+
   public logout() {
     this.auth.logout().subscribe(succ => {
       this.navCtrl.setRoot('LoginPage')
     });
   }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad GroepsinboxNedDriePage');
-  }
-
 }
