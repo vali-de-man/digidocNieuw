@@ -29,6 +29,10 @@ export class DesktoplayoutRootPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  benGSM(){
+    this.navCtrl.push("GroepsinboxNedDriePage");
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesktoplayoutRootPage');
   }

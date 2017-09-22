@@ -18,11 +18,16 @@ import { PopoverController } from 'ionic-angular';
 })
 export class DesktoplayoutPage {
 
+ 
   root="DesktoplayoutRootPage";
   
+
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
   }
   
+
+
   presentPopover(myEvent) {
     let popover = this.poppy.create(PopoverPage);
     popover.present({
@@ -32,5 +37,6 @@ export class DesktoplayoutPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesktoplayoutPage');
   }
+
 
 }
