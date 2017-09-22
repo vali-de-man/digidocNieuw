@@ -1,3 +1,4 @@
+import { PopoverPage } from './../pages/popover/popover';
 import { AuthService } from './../providers/auth-service/auth-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -11,7 +12,8 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
  
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    PopoverPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,8 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    PopoverPage
   ],
   providers: [
     StatusBar,
