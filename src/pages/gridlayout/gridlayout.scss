@@ -1,20 +1,58 @@
 page-gridlayout {
 
+  .container {
+    display: grid;
+  }
+
   .cola{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: start;
+    grid-row-end: end;
     background: #F8C7C7;
     border: think solid black;
     }
 
   .colb{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: start;
+    grid-row-end: end;
     background: #CEF7E0;
     border: think solid black;
     }
 
   .colc{
+    grid-column-start: 3;
+    grid-column-end: span 6;
+    grid-row-start: start;
+    grid-row-end: end;
     background: #B6B2FA;
     border: think solid black;
     }
-    .scroll-col{
-      height: 200px;
-}
+
+    .cold{
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: start;
+      grid-row-end: end;
+      background: #B6B2FA;
+      border: think solid black;
+      }
+      .cole{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: start;
+        grid-row-end: end;
+        background: #B6B2FA;
+        border: think solid black;
+        }
+        .colf{
+          grid-column-start:5;
+          grid-column-end: 6;
+          grid-row-start: start;
+          grid-row-end: end;
+          background: #B6B2FA;
+          border: think solid black;
+          }
 }
