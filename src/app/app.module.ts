@@ -1,3 +1,4 @@
+import { FavoriteProvider } from './../providers/favorite/favorite';
 import { PopoverPage } from './../pages/popover/popover';
 import { AuthService } from './../providers/auth-service/auth-service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { FavoriteProvider } from '../providers/favorite/favorite';
+
 
 @NgModule({
   declarations: [

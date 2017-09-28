@@ -24,7 +24,7 @@
         
           <ion-slide>
             <h2>Huidig werk</h2>
-            <button ion-button block *ngFor="let HWitem of HWitems" (click)="HWitemSelected(HWitem)">{{HWitem}}</button>
+            <button ion-button block *ngFor="let HWitem of HWitems" (click)="handleMenuClick(HWitem)">{{HWitem}}</button>
           </ion-slide>
         
           <ion-slide>

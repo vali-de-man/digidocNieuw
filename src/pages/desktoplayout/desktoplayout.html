@@ -6,27 +6,17 @@
 -->
 
 <ion-split-pane>
-  <ion-menu [content]="content">
+<ion-menu [content]="content">
+          
+                <ion-tabs tabsPlacement="top">
+                        <ion-tab [root]="chatRoot0" tabTitle="Inboxen" tabIcon="mail"></ion-tab>
+                        <ion-tab [root]="chatRoot1" tabTitle="Persoonlijk" tabIcon="heart"></ion-tab>
+                        <ion-tab [root]="chatRoot2" tabTitle="Algemeen" tabIcon="archive"></ion-tab>
+                       </ion-tabs>
+                 
 
-    <ion-header>
+</ion-menu>
 
-      <ion-navbar>
-         <ion-title>
-            Split-pane voorbeeld
-        </ion-title>
-      </ion-navbar>
-    </ion-header>
-
-    <ion-content>
-      
-     
-        <button ion-item menuClose (click)="presentPopover($event)">Inboxen</button>
-      <button ion-item menuClose>Algemene werkomgeving</button>
-      <button ion-item menuClose>Persoonlijke werkomgeving</button>
-    </ion-content>
-  </ion-menu>
-
-  <ion-nav [root]="root" main #content></ion-nav>
+    <ion-nav [root]="root" main #content></ion-nav>
 
 </ion-split-pane>
-

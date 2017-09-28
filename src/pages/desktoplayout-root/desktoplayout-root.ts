@@ -30,7 +30,7 @@ export class DesktoplayoutRootPage {
   }
 
   benGSM(){
-    this.navCtrl.push("GroepsinboxNedDriePage");
+    this.navCtrl.push("BurgerbriefNr_1Page");
   }
   
   ionViewDidLoad() {

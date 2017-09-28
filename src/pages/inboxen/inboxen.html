@@ -20,7 +20,8 @@
 
 <ion-content class="inboxen" padding>
   <ion-list>
-  <button ion-button block *ngFor="let item of items" (click)="itemSelected(item)">{{item}}</button>
+  <button ion-button block *ngFor="let item of items" (click)="handleMenuClick(item)">{{item}}</button>
 </ion-list>
+
 </ion-content>
 
