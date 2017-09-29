@@ -1,8 +1,9 @@
+import { PopoverPage } from './../popover/popover';
 import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
 import { DesktoplayoutPage} from '../desktoplayout/desktoplayout';
-
+import {App} from 'ionic-angular';
 /**
  * Generated class for the InboxenPage page.
  *
@@ -34,11 +35,25 @@ export class InboxenPage {
     this.navCtrl.push("GroepsinboxNedDriePage");
   }
 
-  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage : DesktoplayoutPage) {
+  constructor(public poppy: PopoverController, private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage : DesktoplayoutPage, private app: App) {
   }
 
+  presentPopover(myEvent) {
+    let popover = this.poppy.create(PopoverPage);
+    popover.present({
+      ev: myEvent
+    });
+  }
 
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
 
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      refresher.complete();
+    }, 2000);
+  }
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad InboxenPage');
   }
@@ -51,7 +66,7 @@ export class InboxenPage {
   
   public logout() {
     this.auth.logout().subscribe(succ => {
-      this.navCtrl.setRoot('LoginPage')
+      this.app.getRootNav().setRoot("LoginPage");
     });
   }
 }

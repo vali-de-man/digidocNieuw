@@ -32,7 +32,7 @@ export class DesktoplayoutRootPage {
   benGSM(){
     this.navCtrl.push("BurgerbriefNr_1Page");
   }
-  
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesktoplayoutRootPage');
   }

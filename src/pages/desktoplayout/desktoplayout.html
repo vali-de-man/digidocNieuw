@@ -10,8 +10,8 @@
           
                 <ion-tabs tabsPlacement="top">
                         <ion-tab [root]="chatRoot0" tabTitle="Inboxen" tabIcon="mail"></ion-tab>
-                        <ion-tab [root]="chatRoot1" tabTitle="Persoonlijk" tabIcon="heart"></ion-tab>
-                        <ion-tab [root]="chatRoot2" tabTitle="Algemeen" tabIcon="archive"></ion-tab>
+                        <ion-tab [root]="chatRoot1" tabTitle="Persoonlijke werkomgeving" tabIcon="heart" (click)="syncRight()"></ion-tab>
+                        <ion-tab [root]="chatRoot2" tabTitle="Algemene werkomgeving" tabIcon="archive"></ion-tab>
                        </ion-tabs>
                  
 

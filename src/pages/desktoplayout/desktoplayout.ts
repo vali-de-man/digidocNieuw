@@ -39,6 +39,11 @@ export class DesktoplayoutPage {
   constructor(public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
   }
 
+  syncRight(){
+  var navs = this.getNavController().getAllChildNavs();
+  navs[1].push('PersoonlijkPage');
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesktoplayoutPage');
   }

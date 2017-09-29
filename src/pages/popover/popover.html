@@ -1,6 +1,7 @@
-<ion-list>
-  <ion-list-header>Hoofdmenu</ion-list-header>
-  <button ion-item (click)="close()">Inboxen</button>
-  <button ion-item (click)="close()">Algemene werkomgeving</button>
-  <button ion-item (click)="naarHuis()">Persoonlijke werkomgeving</button>
-</ion-list>
+
+  <ion-list-header><div class="closeButton"> <button ion-button  (click)="close()"><ion-icon name="close-circle"></ion-icon></button> </div></ion-list-header>
+
+
+  <ion-item>
+      <ion-label color="primary">Zoek:</ion-label>
+      <ion-input placeholder="Document X"></ion-input>
