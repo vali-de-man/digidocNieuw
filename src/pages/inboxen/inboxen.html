@@ -19,8 +19,19 @@
 
 
 <ion-content class="inboxen" padding>
-  <ion-list>
-  <button ion-button block *ngFor="let item of items" (click)="itemSelected(item)">{{item}}</button>
-</ion-list>
+
+          <ion-refresher (ionRefresh)="doRefresh($event)">
+            <ion-refresher-content>
+              pullingIcon="arrow-dropdown"
+              pullingText="Pull to refresh"
+              refreshingSpinner="circles"
+              refreshingText="Refreshing...">
+            </ion-refresher-content>
+          </ion-refresher>
+          <ion-list>
+              <button ion-button block *ngFor="let item of items" (click)="itemSelected(item)">{{item}}</button>
+            </ion-list>
+
+
 </ion-content>
 

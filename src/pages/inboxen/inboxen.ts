@@ -27,6 +27,19 @@ export class InboxenPage {
     'PERSOONLIJKE INBOX'
   ];
 
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
+    this.items = [
+      'Groepsinbox NED/EEN',
+      'Groepsinbox NED/TWEE',
+      'Groepsinbox NED/DRIE',
+      'Groepsinbox NED'];
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      refresher.complete();
+    }, 2000);
+  }
+
   itemSelected(item: string) {
     console.log("Selected Item", item);
     this.navCtrl.push("GroepsinboxNedDriePage");
