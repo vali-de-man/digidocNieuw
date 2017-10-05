@@ -1,3 +1,4 @@
+import { DesktoplayoutPage } from './../desktoplayout/desktoplayout';
 import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -16,7 +17,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PersoonlijkPage {
 
-  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage: DesktoplayoutPage) {
+  }
+  
+  goTo(){
+    var navs = this.desktopLayoutpage.getNavController().getAllChildNavs();
+    navs[1].push('HeaderPage');
   }
 
   ionViewDidLoad() {

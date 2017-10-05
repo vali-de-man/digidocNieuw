@@ -21,6 +21,10 @@ export class PopoverPage {
   close() {
     this.viewCtrl.dismiss();
   }
+
+  naarHuis(){
+this.navCtrl.push('HomePage');
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad PopoverPage');
   }

@@ -45,6 +45,12 @@ export class GroepsinboxNedDriePage {
   constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  handleMenuClick( HWitem ){
+    console.log("clicked on item: ", HWitem);
+    var navs = this.navCtrl.getAllChildNavs();
+    navs[0].push("BurgerbriefNr_1Page");
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad GroepsinboxNedDriePage');
   }
@@ -54,4 +60,5 @@ export class GroepsinboxNedDriePage {
       this.navCtrl.setRoot('LoginPage')
     });
   }
+
 }

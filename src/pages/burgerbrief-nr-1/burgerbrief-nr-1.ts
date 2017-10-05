@@ -28,7 +28,6 @@ export class BurgerbriefNr_1Page {
   }
 
 
-
   public logout() {
     this.auth.logout().subscribe(succ => {
       this.app.getRootNav().setRoot("LoginPage");

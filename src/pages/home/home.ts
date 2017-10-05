@@ -22,13 +22,17 @@ export class HomePage {
   }
 
   public gaDoor2(){
-    this.nav.push('DesktoplayoutPage');
+    this.nav.setRoot('DesktoplayoutPage');
   }
    public gaDoor3(){
     this.nav.push('AndereDesktoplayoutPage');
   }
    public gaDoor4(){
     this.nav.push('GridlayoutPage');
+  }
+
+  public gaDoor5(){
+    this.nav.push('HeaderPage')
   }
   public logout() {
     this.auth.logout().subscribe(succ => {

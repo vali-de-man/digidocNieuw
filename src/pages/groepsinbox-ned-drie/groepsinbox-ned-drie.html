@@ -8,6 +8,8 @@
 
   <ion-navbar color="dark">
     <ion-title>Groepsinbox NED/DRIE</ion-title>
+
+    
     <ion-buttons end>
         <button ion-button (click)="logout()">
           <ion-icon name="log-out"></ion-icon>
@@ -18,23 +20,29 @@
 </ion-header>
 
 
+
 <ion-content class="groepsinbox-ned-drie" padding>
-<span> <button ion-button>Open taak</button> <button ion-button>Afronden</button> </span>
+
+
+<span> <button ion-button>Open taak</button> <button ion-button>Afronden</button>
+
+</span>
     <ion-slides pager>
-        
+
           <ion-slide>
             <h2>Huidig werk</h2>
-            <button ion-button block *ngFor="let HWitem of HWitems" (click)="HWitemSelected(HWitem)">{{HWitem}}</button>
+            <button ion-button block *ngFor="let HWitem of HWitems" (click)="handleMenuClick(HWitem)">{{HWitem}}</button>
           </ion-slide>
-        
+
           <ion-slide>
             <h2>Ter info</h2>
           </ion-slide>
-        
+
           <ion-slide>
             <h2>Afgerond werk</h2>
             <button ion-button block *ngFor="let item of items" (click)="itemSelected(item)">{{item}}</button>
           </ion-slide>
-        
+
         </ion-slides>
+
 </ion-content>
