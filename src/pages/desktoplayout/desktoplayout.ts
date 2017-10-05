@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import {MenuController} from 'ionic-angular';
 
+
 /**
  * Generated class for the DesktoplayoutPage page.
  *
@@ -16,6 +17,8 @@ import {MenuController} from 'ionic-angular';
   templateUrl: 'desktoplayout.html',
 })
 export class DesktoplayoutPage {
+
+  tabTitle: String = "Persoonlijke \n werkomgeving";
 
   items = [
     'Groepsinbox NED/EEN (3)',
@@ -39,11 +42,18 @@ export class DesktoplayoutPage {
   constructor(public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
   }
 
-  syncRight(){
-  var navs = this.getNavController().getAllChildNavs();
-  navs[1].push('PersoonlijkPage');
+  syncRight0(){
+    var navs = this.getNavController().getAllChildNavs();
+    navs[1].setRoot('DesktoplayoutRootPage');
   }
-
+  syncRight1(){
+    var navs = this.getNavController().getAllChildNavs();
+    navs[1].setRoot('PersoonlijkPage');
+  }
+  syncRight2(){
+    var navs = this.getNavController().getAllChildNavs();
+    navs[1].setRoot('AlgemeenPage');
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesktoplayoutPage');
   }

@@ -34,6 +34,10 @@ export class HomePage {
   public gaDoor5(){
     this.nav.push('HeaderPage')
   }
+
+  public gaDoor6(){
+    this.nav.push('TreePage');
+  }
   public logout() {
     this.auth.logout().subscribe(succ => {
       this.nav.setRoot('LoginPage')

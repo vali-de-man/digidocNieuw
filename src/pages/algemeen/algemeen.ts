@@ -20,7 +20,7 @@ export class AlgemeenPage {
   constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage: DesktoplayoutPage) {
   }
 
-  private goTo(){
+ goTo(){
     var navs = this.desktopLayoutpage.getNavController().getAllChildNavs();
     navs[1].push('AndereDesktoplayoutPage');
   }
