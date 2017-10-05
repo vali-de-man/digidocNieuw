@@ -1,11 +1,13 @@
 page-desktoplayout-root {
 
-    
+
 
     ion-row{
         height: auto;
     }
-       
+.nav{
+  padding: 0px;
+}
 
         .data-table {
             width: 100%;
@@ -14,11 +16,11 @@ page-desktoplayout-root {
             width: 100%;
             height: 50px;
         }
-        
-      
+
+
         .searchDiv{
             width: 100% !important;
-        
+
         }
         @media (max-width: 767px) {
             #img1 {
