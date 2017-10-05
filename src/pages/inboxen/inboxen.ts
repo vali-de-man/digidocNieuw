@@ -19,15 +19,15 @@ import {App} from 'ionic-angular';
 })
 export class InboxenPage {
   items = [
-    'Groepsinbox NED/EEN (3)',
-    'Groepsinbox NED/TWEE (7)',
-    'Groepsinbox NED/DRIE (0)',
-    'Groepsinbox NED (null)',
-    'Groepsinbox ARG/UN (1392)',
-    'Groepsinbox ARG/DOS (54)',
-    'Groepsinbox DEU/EINS (1)',
-    'Groepsinbox DEU/ZWEI (1)',
-    'PERSOONLIJKE INBOX (1440)'
+    'Groepsinbox NED/EEN',
+    'Groepsinbox NED/TWEE',
+    'Groepsinbox NED/DRIE',
+    'Groepsinbox NED',
+    'Groepsinbox ARG/UN',
+    'Groepsinbox ARG/DOS',
+    'Groepsinbox DEU/EINS',
+    'Groepsinbox DEU/ZWEI',
+    'PERSOONLIJKE INBOX'
   ];
 
 
@@ -36,14 +36,7 @@ export class InboxenPage {
     this.navCtrl.push("GroepsinboxNedDriePage");
   }
 
-  constructor(public poppy: PopoverController, private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage : DesktoplayoutPage, private app: App) {
-  }
-
-  presentPopover(myEvent) {
-    let popover = this.poppy.create(PopoverPage);
-    popover.present({
-      ev: myEvent
-    });
+  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage : DesktoplayoutPage, private app: App) {
   }
 
   doRefresh(refresher) {

@@ -1,5 +1,37 @@
 page-persoonlijk {
-    .persoonlijk {
-      background: #FFFFFF;
+  ion-row{
+    height: auto;
+}
+.nav{
+    padding: 0px;
+}
+    .data-table {
+        width: 100%;
+    }
+    #img1, #img2{
+        width: 100%;
+        height: 56px;
+    }
+    
+  .search{
+      width: 100% !important;
+    
+  }
+    .searchDiv{
+        width: 30% !important;
+    }
+
+
+    @media (max-width: 767px) {
+        #img1 {
+            display: none;
+        }
+    }
+    @media (min-width: 768px) {
+        #img2 {
+            display: none;
+            width: 100%;
+        }
+
     }
   }

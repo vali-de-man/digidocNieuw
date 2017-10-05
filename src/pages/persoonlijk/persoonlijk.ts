@@ -20,6 +20,14 @@ export class PersoonlijkPage {
   constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage: DesktoplayoutPage) {
   }
   
+  doRefresh(refresher) {
+    console.log('Begin async operation', refresher);
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      refresher.complete();
+    }, 2000);
+  }
   goTo(){
     var navs = this.desktopLayoutpage.getNavController().getAllChildNavs();
     navs[1].push('HeaderPage');

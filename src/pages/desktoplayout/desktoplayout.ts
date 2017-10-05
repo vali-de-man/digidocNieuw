@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import {MenuController} from 'ionic-angular';
 
@@ -17,8 +17,6 @@ import {MenuController} from 'ionic-angular';
   templateUrl: 'desktoplayout.html',
 })
 export class DesktoplayoutPage {
-
-  tabTitle: String = "Persoonlijke \n werkomgeving";
 
   items = [
     'Groepsinbox NED/EEN (3)',
@@ -39,21 +37,21 @@ export class DesktoplayoutPage {
   chatRoot2 = "AlgemeenPage";
 
 
-  constructor(public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
+  constructor(public toastCtrl: ToastController, public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
   }
 
-  syncRight0(){
+  syncRight(tabTitle, newRoot){
     var navs = this.getNavController().getAllChildNavs();
-    navs[1].setRoot('DesktoplayoutRootPage');
+    navs[1].setRoot(newRoot);
+
+    const toast = this.toastCtrl.create({
+      message: 'Dit is de tab: ' + tabTitle,
+      duration: 1000,
+      position: 'middle'
+    });
+    toast.present();
   }
-  syncRight1(){
-    var navs = this.getNavController().getAllChildNavs();
-    navs[1].setRoot('PersoonlijkPage');
-  }
-  syncRight2(){
-    var navs = this.getNavController().getAllChildNavs();
-    navs[1].setRoot('AlgemeenPage');
-  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DesktoplayoutPage');
   }
