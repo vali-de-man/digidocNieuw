@@ -1,5 +1,3 @@
-import { DesktoplayoutPage } from './../desktoplayout/desktoplayout';
-import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -17,7 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AlgemeenPage {
 
-  constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage: DesktoplayoutPage) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 

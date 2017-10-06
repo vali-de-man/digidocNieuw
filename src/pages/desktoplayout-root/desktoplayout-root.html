@@ -11,9 +11,9 @@
             <ion-icon name="menu"></ion-icon>
           </button>
 
-          <ion-item no-lines class="item" color="rijksoverheid"><ion-title left class="title">Groepsinbox NED/DRIE</ion-title><div item-end class="searchDiv"><ion-searchbar class="search"></ion-searchbar></div></ion-item>   
+          <ion-item no-lines class="item" color="rijksoverheid"><ion-title left class="title">Groepsinbox NED/DRIE</ion-title><div item-end class="searchDiv"><ion-searchbar class="search"></ion-searchbar></div></ion-item>
         </ion-navbar>
-          
+
 
 
   </ion-header>
@@ -24,9 +24,9 @@
       <ion-row><ion-col>
         <button ion-button default color="rijksoverheid" (click)="benGSM()">Open taak</button>
         <button ion-button default color="rijksoverheid">Afronden</button>
-        
+
       </ion-col></ion-row>
-      
+
        <ion-row><ion-col><h2>Huidig werk</h2></ion-col></ion-row>
 
 <ion-row><ion-col>
@@ -49,12 +49,12 @@
 
 <ion-row><ion-col><h2>Ter info</h2></ion-col></ion-row>
 <ion-row><ion-col>
-    
+
       <table border="1" class="data-table">
         <tr>
           <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
         </tr>
-    
+
         <tr *ngFor="let nummer of nummers">
           <td>#</td>
         <td>Burgerbrief nr 1</td>
@@ -62,17 +62,17 @@
         <td>15-08-2017</td>
         </tr>
       </table>
-    
+
     </ion-col>
     </ion-row>
 <ion-row><ion-col><h2>Afgerond werk</h2></ion-col></ion-row>
 <ion-row><ion-col>
-    
+
       <table border="1" class="data-table">
         <tr>
           <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
         </tr>
-    
+
         <tr *ngFor="let nummer of nummers">
           <td>#</td>
         <td>Burgerbrief nr 1</td>
@@ -80,7 +80,7 @@
         <td>15-08-2017</td>
         </tr>
       </table>
-    
+
     </ion-col>
     </ion-row>
 </ion-grid>

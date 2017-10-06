@@ -1,7 +1,6 @@
-import { PopoverPage } from './../popover/popover';
 import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DesktoplayoutPage} from '../desktoplayout/desktoplayout';
 import {App} from 'ionic-angular';
 
