@@ -5,21 +5,6 @@
   Ionic pages and navigation.
 -->
 
-<ion-header>
-  <ion-navbar color="">
-    <ion-buttons end>
-      <button ion-button (click)="doRefresh($event)" >
-        <ion-icon name="refresh"></ion-icon>
-      </button>
-        <button ion-button (click)="presentPopover($event)">
-            <ion-icon name="search"></ion-icon>
-        </button>
-        <button ion-button (click)="logout()">
-          <ion-icon name="log-out"></ion-icon>
-        </button>
-      </ion-buttons>
-  </ion-navbar>
-</ion-header>
 
 
 
@@ -29,7 +14,7 @@
       </ion-refresher>
   <h2>Inboxen</h2>
   <ion-list>
-  <button ion-button block *ngFor="let item of items" (click)="handleMenuClick(item)">{{item}}</button>
+  <button ion-button block color="rijksoverheid" *ngFor="let item of items" (click)="handleMenuClick(item)"><ion-item color="rijksoverheid">{{item}}<ion-badge item-end color="light">25</ion-badge></ion-item></button>
 </ion-list>
 
 </ion-content>

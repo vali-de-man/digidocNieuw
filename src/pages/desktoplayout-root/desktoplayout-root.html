@@ -6,26 +6,24 @@
 -->
 
 <ion-header no-border>
-    <ion-navbar class="nav">
-      <img src="../../assets/images/siteroh.jpg" id="img1"><img src="../../assets/images/SSC.gif" id="img2">
+    <ion-navbar class="nav" color="rijksoverheid"><img src="../../assets/images/siteroh.jpg" id="img1"><img src="../../assets/images/SSC.gif" id="img2">
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
           </button>
 
-          <div class="searchDiv"><ion-searchbar class="search"></ion-searchbar></div>
+          <ion-item no-lines class="item" color="rijksoverheid"><ion-title left class="title">Groepsinbox NED/DRIE</ion-title><div item-end class="searchDiv"><ion-searchbar class="search"></ion-searchbar></div></ion-item>
+        </ion-navbar>
 
 
 
-    </ion-navbar>
   </ion-header>
 
 <ion-content padding>
 
   <ion-grid>
-      <ion-title left class="title">Groepsinbox NED/DRIE</ion-title>
       <ion-row><ion-col>
-        <button ion-button default (click)="benGSM()">Open taak</button>
-        <button ion-button default >Afronden</button>
+        <button ion-button default color="rijksoverheid" (click)="benGSM()">Open taak</button>
+        <button ion-button default color="rijksoverheid">Afronden</button>
 
       </ion-col></ion-row>
 

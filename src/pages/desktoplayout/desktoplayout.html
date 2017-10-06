@@ -9,9 +9,9 @@
 <ion-menu [content]="content">
 
                 <ion-tabs tabsPlacement="top">
-                        <ion-tab [root]="chatRoot0" tabTitle="Inboxen" tabIcon="mail" (ionSelect)="syncRight0()"></ion-tab>
-                        <ion-tab [root]="chatRoot1" tabTitle={{tabTitle}} tabIcon="heart" (ionSelect)="syncRight1()"></ion-tab>
-                        <ion-tab [root]="chatRoot2" tabTitle="Algemene \n werkomgeving" tabIcon="archive" (ionSelect)="syncRight2()"></ion-tab>
+                        <ion-tab [root]="chatRoot0" tabIcon="mail" (ionSelect)="syncRight('Inboxen', 'DesktoplayoutRootPage')"></ion-tab>
+                        <ion-tab [root]="chatRoot1" tabIcon="heart" (ionSelect)="syncRight('Persoonlijke werkomgeving', 'PersoonlijkPage')"></ion-tab>
+                        <ion-tab [root]="chatRoot2" tabIcon="archive" (ionSelect)="syncRight('Algemene werkomgeving', 'AlgemeenPage')"></ion-tab>
                        </ion-tabs>
 
 
