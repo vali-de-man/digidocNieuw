@@ -1,12 +1,12 @@
 <ion-content class="login-content" padding>
-  <ion-row class="logo-row">
+  <ion-row color="rijksoverheid" class="logo-row">
     <ion-col></ion-col>
     <ion-col width-67>
-      <img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAANlAAAAJDdiZTliMWRjLTc0ZTItNGUwMC1hODg4LTMxZmUwMzhmZTBlOQ.jpg"/>
+      <img src="../../assets/images/SSC.gif"/>
     </ion-col>
     <ion-col></ion-col>
   </ion-row>
-  <div class="login-box">
+  <div color="rijksoverheid" class="login-box">
     <form (ngSubmit)="login()" #registerForm="ngForm">
       <ion-row>
         <ion-col>
@@ -25,9 +25,9 @@
       </ion-row>
       
       <ion-row>
-        <ion-col class="signup-col">
-          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Login</button>
-          <button ion-button class="register-btn" block clear (click)="createAccount()">Create New Account</button>
+        <ion-col color="rijksoverheid" class="signup-col">
+          <button ion-button color="rijksoverheid" color="rijksoverheid" class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Login</button>
+          <button ion-button color="rijksoverheid" color="rijksoverheid" class="register-btn" block clear (click)="createAccount()">Create New Account</button>
         </ion-col>
       </ion-row>
       

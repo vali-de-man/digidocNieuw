@@ -33,8 +33,8 @@ export class DesktoplayoutPage {
 
   root="DesktoplayoutRootPage";
   chatRoot0 = "InboxenPage";
-  chatRoot1 = "PersoonlijkPage";
-  chatRoot2 = "AlgemeenPage";
+  chatRoot1 = "PersoonlijkMenuPage";
+  chatRoot2 = "AlgemeenMenuPage";
 
 
   constructor(public toastCtrl: ToastController, public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
