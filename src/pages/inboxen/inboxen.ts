@@ -47,9 +47,7 @@ export class InboxenPage {
     }, 2000);
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InboxenPage');
-  }
+
 
   handleMenuClick( item ){
     console.log("clicked on item: ", item);
