@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController, Loading, IonicPage } from 'ionic-angular';
 import { AuthService } from '../../providers/auth-service/auth-service';
- 
+
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -10,18 +10,14 @@ import { AuthService } from '../../providers/auth-service/auth-service';
 export class LoginPage {
   loading: Loading;
   registerCredentials = { email: '', password: '' };
- 
-  constructor(public nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController) { }
- 
 
-   public createAccount() {
-    this.nav.push('RegisterPage');
-  }
+  constructor(public nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController) { }
+
   public login() {
     this.showLoading()
     this.auth.login(this.registerCredentials).subscribe(allowed => {
-      if (allowed) {        
-        this.nav.setRoot('HomePage');
+      if (allowed) {
+        this.nav.setRoot('TabsPage');
       } else {
         this.showError("Access Denied");
       }
@@ -30,7 +26,7 @@ export class LoginPage {
         this.showError(error);
       });
   }
- 
+
   showLoading() {
     this.loading = this.loadingCtrl.create({
       content: 'Please wait...',
@@ -38,15 +34,15 @@ export class LoginPage {
     });
     this.loading.present();
   }
- 
+
   showError(text) {
     this.loading.dismiss();
- 
+
     let alert = this.alertCtrl.create({
       title: 'Fail',
       subTitle: text,
       buttons: ['OK']
     });
-    alert.present(prompt);
+    alert.present();
   }
 }
