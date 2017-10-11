@@ -1,7 +1,6 @@
-import { PopoverPage } from './../popover/popover';
 import { AuthService } from './../../providers/auth-service/auth-service';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DesktoplayoutPage} from '../desktoplayout/desktoplayout';
 import {App} from 'ionic-angular';
 
@@ -37,15 +36,6 @@ export class InboxenPage {
   }
 
   constructor(private auth: AuthService, public navCtrl: NavController, public navParams: NavParams, private desktopLayoutpage : DesktoplayoutPage, private app: App) {
-  }
-
-  doRefresh(refresher) {
-    console.log('Begin async operation', refresher);
-
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      refresher.complete();
-    }, 2000);
   }
 
   ionViewDidLoad() {

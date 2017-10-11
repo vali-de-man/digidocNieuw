@@ -8,19 +8,9 @@
   <ion-navbar class="nav" color="rijksoverheid"><img src="../../assets/images/siteroh.jpg" id="img1"><img src="../../assets/images/SSC.gif" id="img2">
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
-        </button>
-
-        <ion-item no-lines class="item" color="rijksoverheid"><ion-title left class="title">Groepsinbox NED/DRIE</ion-title><div item-end class="searchDiv"><ion-searchbar class="search"></ion-searchbar></div></ion-item>   
-      </ion-navbar>
-        
-
-
+      </button>
+          <ion-item no-lines class="item" color="rijksoverheid"><ion-title left class="title">Persoonlijke werkomgeving</ion-title></ion-item>
+  </ion-navbar>
 </ion-header>
 
-<ion-content class="inboxen" padding>
-  <ion-refresher (ionRefresh)="doRefresh($event)">
-      <ion-refresher-content refreshingSpinner="circles" refreshingText="Digidoc wordt vernieuwd.."></ion-refresher-content>
-    </ion-refresher>
-<h2>Persoonlijk</h2>
-<button ion-button block (click)="goTo()">Header</button>
-</ion-content>
+

@@ -1,34 +1,26 @@
-<ion-header>
-  <ion-navbar color="dark">
-    <ion-title>
-      Digidoc
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button (click)="logout()">
-        <ion-icon name="log-out"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
+<ion-header no-border>
+  <ion-navbar class="nav" color="white"><img src="../../assets/images/siteroh.jpg" id="img1"><img src="../../assets/images/SSC.gif" id="img2">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+</ion-navbar ><ion-navbar color="rijksoverheid">
+        <ion-item no-lines class="item" color="rijksoverheid"><ion-title left class="title">Digidoc home</ion-title><div item-end class="searchDiv"><ion-searchbar class="search"></ion-searchbar></div></ion-item>
+      </ion-navbar>
+
+
+
 </ion-header>
 
-<ion-content class="home" padding>
+<ion-content padding>
   <h3>Welkom in het nieuwe Digidoc, {{username}}!</h3>
   Uw e-mail is: {{email}}
-  <br><br><br><br>
-  <h3>De demo begint met een aantal schermen geschikt voor mobiele telefoons en tablets</h3>
-  <br>
-  <button class="button" ion-button (click)="gaDoor()">Ga door</button>
-<br>
-<h3>En hoe zou dat eruit kunnen zien op een desktop?</h3>
+  <br><br>
 
-<button ion-button (click)="gaDoor2()">Split-pane</button>
+<h3>Hoe zou de webinterface eruit kunnen zien?</h3>
+
+<button ion-button color="rijksoverheid" (click)="gaDoor('DesktoplayoutPage')">Split-pane</button>
+
 <br>
-<button ion-button (click)="gaDoor3()">Flexbox</button>
-<br><br>
-<button ion-button (click)="gaDoor4()">Grid layout</button>
-<br>
-<button ion-button (click)="gaDoor5()">Image madness</button>
-<br>
-<button ion-button (click)="gaDoor6()">Tree voorbeeld</button>
+<button ion-button color="rijksoverheid" (click)="gaDoor('TreePage')">Tree voorbeeld</button>
 
 </ion-content>

@@ -29,13 +29,13 @@ export class DesktoplayoutPage {
     'Groepsinbox DEU/ZWEI (1)',
     'PERSOONLIJKE INBOX (1440)'
   ];
- 
+
 
   root="DesktoplayoutRootPage";
   chatRoot0 = "InboxenPage";
-  chatRoot1 = "PersoonlijkPage";
-  chatRoot2 = "AlgemeenPage";
-
+  chatRoot1 = "PersoonlijkMenuPage";
+  chatRoot2 = "AlgemeenMenuPage";
+  chatroot3 = "InstellingenPage";
 
   constructor(public toastCtrl: ToastController, public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, public poppy: PopoverController) {
   }

@@ -7,16 +7,12 @@
 
 <ion-split-pane>
 <ion-menu [content]="content">
-
                 <ion-tabs tabsPlacement="top">
-                        <ion-tab [root]="chatRoot0" tabIcon="mail" (ionSelect)="syncRight('Inboxen', 'DesktoplayoutRootPage')"></ion-tab>
-                        <ion-tab [root]="chatRoot1" tabIcon="heart" (ionSelect)="syncRight('Persoonlijke werkomgeving', 'PersoonlijkPage')"></ion-tab>
-                        <ion-tab [root]="chatRoot2" tabIcon="archive" (ionSelect)="syncRight('Algemene werkomgeving', 'AlgemeenPage')"></ion-tab>
-                       </ion-tabs>
-
-
+                        <ion-tab [root]="chatRoot0" tabTitle="Inboxen" tabIcon="mail" (ionSelect)="syncRight('Inboxen', 'InboxenMenuPage')"></ion-tab>
+                        <ion-tab [root]="chatRoot1" tabTitle="Persoonlijk" tabIcon="heart" (ionSelect)="syncRight('Persoonlijke werkomgeving', 'PersoonlijkPage')"></ion-tab>
+                        <ion-tab [root]="chatRoot2" tabTitle="Algemeen" tabIcon="archive" (ionSelect)="syncRight('Algemene werkomgeving', 'AlgemeenPage')"></ion-tab>
+                        <ion-tab [root]="chatRoot3" tabTitle="Instellingen" tabIcon="settings" (ionSelect)="syncRight('Instellingen', 'InstellingenMenuPage')"></ion-tab>
+                </ion-tabs>
 </ion-menu>
-
     <ion-nav [root]="root" main #content></ion-nav>
-
 </ion-split-pane>

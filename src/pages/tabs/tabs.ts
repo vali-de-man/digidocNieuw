@@ -19,6 +19,7 @@ export class TabsPage {
   tab1 = 'InboxenPage';
   tab2 = 'PersoonlijkPage';
   tab3 = 'AlgemeenPage';
+  tab4 = 'InstellingenPage'
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
