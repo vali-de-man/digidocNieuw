@@ -10,18 +10,6 @@ import { MenuController } from 'ionic-angular';
 })
 export class TabsPage {
 
-  items = [
-    'Groepsinbox NED/EEN (3)',
-    'Groepsinbox NED/TWEE (7)',
-    'Groepsinbox NED/DRIE (0)',
-    'Groepsinbox NED (null)',
-    'Groepsinbox ARG/UN (1392)',
-    'Groepsinbox ARG/DOS (54)',
-    'Groepsinbox DEU/EINS (1)',
-    'Groepsinbox DEU/ZWEI (1)',
-    'PERSOONLIJKE INBOX (1440)'
-  ];
-
   root = "InboxenDefaultPage";
   tabRoot0 = "InboxenMenuPage";
   tabRoot1 = "PersoonlijkMenuPage";
