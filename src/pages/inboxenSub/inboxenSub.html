@@ -18,86 +18,13 @@
 </ion-header>
 
 <ion-content padding>
+  <button ion-button default color="rijksoverheid" (click)="push('InboxenSub2Page')">Open taak</button>
+  <button ion-button default color="rijksoverheid">Afronden</button>
+<h2>Huidig werk</h2>
+  <aggrid padding></aggrid>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <button ion-button default color="rijksoverheid" (click)="push('InboxenSub2Page')">Open taak</button>
-        <button ion-button default color="rijksoverheid">Afronden</button>
+  <h2>Ter info</h2>
 
-      </ion-col>
-    </ion-row>
+  <h2>Afgerond werk</h2>
 
-    <ion-row>
-      <ion-col>
-        <h2>Huidig werk</h2>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-
-        <table border="1" class="data-table">
-          <tr>
-            <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
-          </tr>
-
-          <tr *ngFor="let nummer of nummers">
-            <td>#</td>
-            <td>Burgerbrief nr 1</td>
-            <td>2017-000005845</td>
-            <td>15-08-2017</td>
-          </tr>
-        </table>
-
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <h2>Ter info</h2>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-
-        <table border="1" class="data-table">
-          <tr>
-            <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
-          </tr>
-
-          <tr *ngFor="let nummer of nummers">
-            <td>#</td>
-            <td>Burgerbrief nr 1</td>
-            <td>2017-000005845</td>
-            <td>15-08-2017</td>
-          </tr>
-        </table>
-
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <h2>Afgerond werk</h2>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-
-        <table border="1" class="data-table">
-          <tr>
-            <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
-          </tr>
-
-          <tr *ngFor="let nummer of nummers">
-            <td>#</td>
-            <td>Burgerbrief nr 1</td>
-            <td>2017-000005845</td>
-            <td>15-08-2017</td>
-          </tr>
-        </table>
-
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>
