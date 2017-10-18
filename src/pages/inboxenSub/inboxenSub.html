@@ -18,13 +18,18 @@
 </ion-header>
 
 <ion-content padding>
+
+  <ion-item no-lines>
   <button ion-button default color="rijksoverheid" (click)="push('InboxenSub2Page')">Open taak</button>
-  <button ion-button default color="rijksoverheid">Afronden</button>
-<h2>Huidig werk</h2>
-  <aggrid padding></aggrid>
+  <button ion-button default color="rijksoverheid" item-end>Werkstroominfo</button>
+  <button ion-button default color="rijksoverheid" item-end>Afronden</button>
+</ion-item>
 
-  <h2>Ter info</h2>
+<h2 padding>Huidig werk</h2>
+  <aggrid class="grid"></aggrid>
 
-  <h2>Afgerond werk</h2>
+  <h2 padding>Ter info</h2>
+
+  <h2 padding>Afgerond werk</h2>
 
 </ion-content>
