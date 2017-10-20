@@ -23,9 +23,15 @@ ion-row{
     .data-table {
         width: 100%;
     }
-    #img1, #img2{
-        width: 100%;
+    #img1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         height: 56px;
+    }
+
+    .headeritem{
+        font-size: 180%;
     }
     
   .search{
@@ -36,16 +42,3 @@ ion-row{
         width: 30% !important;
     }
 
-
-    @media (max-width: 767px) {
-        #img1 {
-            display: none;
-        }
-    }
-    @media (min-width: 768px) {
-        #img2 {
-            display: none;
-            width: 100%;
-        }
-
-    }

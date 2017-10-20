@@ -1,35 +1,36 @@
-<ion-content class="login-content" padding>
+<ion-content class="login-content">
   <ion-row color="rijksoverheid" class="logo-row">
-    <ion-col></ion-col>
-    <ion-col width-67>
-      <img src="../../assets/images/SSC.gif" />
+    <ion-col>
+      <img src="../../assets/images/RO_Logo_2_RGB_pos op kleur_x_nl.png" class="logo">
     </ion-col>
-    <ion-col></ion-col>
   </ion-row>
-  <div color="rijksoverheid" class="login-box">
+  
+  <ion-row class="headerrow">
+  <h2 class="loginheaders">Digidoc</h2>
+</ion-row>
+
+<br><br><br> 
+
+  <div class="login-box">
     <form (ngSubmit)="login()" #registerForm="ngForm">
       <ion-row>
         <ion-col>
           <ion-list inset>
-
             <ion-item>
               <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
             </ion-item>
-
             <ion-item>
-              <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+              <ion-input type="password" placeholder="Single sign-on wachtwoord" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
             </ion-item>
-
           </ion-list>
         </ion-col>
       </ion-row>
-
       <ion-row>
         <ion-col color="rijksoverheid" class="signup-col">
           <button ion-button color="rijksoverheid" color="rijksoverheid" class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">Login</button>
         </ion-col>
       </ion-row>
-
     </form>
   </div>
+
 </ion-content>
