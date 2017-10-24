@@ -4,10 +4,10 @@ import { AlgemeenSubPage } from './algemeenSub';
 
 @NgModule({
   declarations: [
-    AlgemeenSubPage,
+    AlgemeenSubPage
   ],
   imports: [
-    IonicPageModule.forChild(AlgemeenSubPage),
+    IonicPageModule.forChild(AlgemeenSubPage)
   ],
 })
 export class AlgemeenSubPageModule { }

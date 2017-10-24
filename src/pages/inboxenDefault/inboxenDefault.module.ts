@@ -7,7 +7,7 @@ import { InboxenDefaultPage } from './inboxenDefault';
     InboxenDefaultPage,
   ],
   imports: [
-    IonicPageModule.forChild(InboxenDefaultPage),
+    IonicPageModule.forChild(InboxenDefaultPage)
   ],
 })
 export class InboxenDefaultPageModule {}

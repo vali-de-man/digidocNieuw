@@ -1,11 +1,11 @@
 <ion-header no-border>
-  <ion-navbar class="nav" color="rijksoverheid"><img src="../../assets/images/siteroh.jpg" id="img1"><img src="../../assets/images/SSC.gif" id="img2">
+  <ion-navbar class="nav" color="white"><img src="../../assets/images/RO_Logo_2_RGB_pos op kleur_x_nl.png" id="img1">
     <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
           </button>
 
-    <ion-item no-lines class="item" color="rijksoverheid">
-      <ion-title left class="title">Groepsinbox NED/DRIE</ion-title>
+    <ion-item no-lines class="headeritem" color="rijksoverheid">
+     Groepsinbox NED/DRIE
       <div item-end class="searchDiv">
         <ion-searchbar placeholder="Vul een zoekterm in" class="search"></ion-searchbar>
       </div>
@@ -19,85 +19,17 @@
 
 <ion-content padding>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <button ion-button default color="rijksoverheid" (click)="push('InboxenSub2Page')">Open taak</button>
-        <button ion-button default color="rijksoverheid">Afronden</button>
+  <ion-item no-lines>
+  <button ion-button default color="rijksoverheid" (click)="push('InboxenSub2Page')">Open taak</button>
+  <button ion-button default color="rijksoverheid" item-end>Werkstroominfo</button>
+  <button ion-button default color="rijksoverheid" item-end>Afronden</button>
+</ion-item>
 
-      </ion-col>
-    </ion-row>
+<h2 padding>Huidig werk</h2>
+  <aggrid class="grid"></aggrid>
 
-    <ion-row>
-      <ion-col>
-        <h2>Huidig werk</h2>
-      </ion-col>
-    </ion-row>
+  <h2 padding>Ter info</h2>
 
-    <ion-row>
-      <ion-col>
+  <h2 padding>Afgerond werk</h2>
 
-        <table border="1" class="data-table">
-          <tr>
-            <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
-          </tr>
-
-          <tr *ngFor="let nummer of nummers">
-            <td>#</td>
-            <td>Burgerbrief nr 1</td>
-            <td>2017-000005845</td>
-            <td>15-08-2017</td>
-          </tr>
-        </table>
-
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col>
-        <h2>Ter info</h2>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-
-        <table border="1" class="data-table">
-          <tr>
-            <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
-          </tr>
-
-          <tr *ngFor="let nummer of nummers">
-            <td>#</td>
-            <td>Burgerbrief nr 1</td>
-            <td>2017-000005845</td>
-            <td>15-08-2017</td>
-          </tr>
-        </table>
-
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <h2>Afgerond werk</h2>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-
-        <table border="1" class="data-table">
-          <tr>
-            <td *ngFor="let header of headerRow" text-left><b>{{ header }}</b></td>
-          </tr>
-
-          <tr *ngFor="let nummer of nummers">
-            <td>#</td>
-            <td>Burgerbrief nr 1</td>
-            <td>2017-000005845</td>
-            <td>15-08-2017</td>
-          </tr>
-        </table>
-
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-content>

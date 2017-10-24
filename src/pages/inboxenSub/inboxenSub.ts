@@ -10,15 +10,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class InboxenSubPage {
 
-  headerRow = [
-    '#',
-    'Onderwerp',
-    'Werkmapnummer',
-    'Ontvangstdatum'
-  ]
-
-  nummers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
   constructor(private tabs: TabsPage, private functions: Functions, public navCtrl: NavController, public navParams: NavParams) {
   }
 
