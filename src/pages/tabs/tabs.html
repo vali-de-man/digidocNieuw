@@ -1,7 +1,8 @@
 <ion-split-pane>
+
   <ion-menu [content]="content">
 
-    <ion-tabs tabsPlacement="top">
+    <ion-tabs tabsPlacement="bottom">
       <ion-tab [root]="tabRoot0" tabTitle="Inboxen" tabIcon="mail" (ionSelect)="setRightScreen('Inboxen', 'InboxenDefaultPage')"></ion-tab>
       <ion-tab [root]="tabRoot1" tabTitle="Favorieten" tabIcon="albums" (ionSelect)="setRightScreen('Persoonlijke werkomgeving', 'PersoonlijkDefaultPage')"></ion-tab>
       <ion-tab [root]="tabRoot2" tabTitle="Werkomgevingen" tabIcon="apps" (ionSelect)="setRightScreen('Algemene werkomgeving', 'AlgemeenDefaultPage')"></ion-tab>
@@ -12,3 +13,4 @@
   <ion-nav [root]="root" main #content></ion-nav>
 
 </ion-split-pane>
+

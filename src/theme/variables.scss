@@ -49,6 +49,10 @@ $tabs-md-tab-color: #01689b;
 $tabs-md-tab-color-active: #01689b;
 $tabs-md-opacity: 0;
 
+.nav {
+  bar-height: 100px !important;
+}
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
