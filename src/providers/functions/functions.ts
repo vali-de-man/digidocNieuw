@@ -1,13 +1,11 @@
 import { App } from 'ionic-angular';
 import { AuthService } from './../auth-service/auth-service';
 import { Injectable } from '@angular/core';
-import 'rxjs/add/operator/map';
 
 @Injectable()
 export class Functions {
 
   constructor(public auth: AuthService, public app: App) {
-    console.log('Hello FunctionsProvider');
   }
 
   public logout() {
@@ -15,5 +13,14 @@ export class Functions {
       this.app.getRootNav().setRoot("LoginPage");
     });
   }
+
+  /*
+  public officeWebApp(GUID){
+//De GUID van het betreffende document moet bekend zijn.
+    let GUID = GUID;
+    let URL = "webAppURL" + "?GUID=" + GUID;
+    window.open("http://'URL','_blank','location=no');
+  }
+  */
 
 }

@@ -5,7 +5,7 @@
           </button>
 
     <ion-item no-lines class="headeritem" color="rijksoverheid">
-     Groepsinbox NED/DRIE
+     {{title}}
       <div item-end class="searchDiv">
         <ion-searchbar placeholder="Vul een zoekterm in" class="search"></ion-searchbar>
       </div>
@@ -20,13 +20,13 @@
 <ion-content padding>
 
   <ion-item no-lines>
-  <button ion-button default color="rijksoverheid" (click)="push('InboxenSub2Page')">Open taak</button>
-  <button ion-button default color="rijksoverheid" item-end>Werkstroominfo</button>
-  <button ion-button default color="rijksoverheid" item-end>Afronden</button>
+  <button ion-button default color="rijksoverheid" (click)="push()" [disabled]="isDisabled">Open taak</button>
+  <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Werkstroominfo</button>
+  <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
 </ion-item>
 
 <h2 padding>Huidig werk</h2>
-  <aggrid class="grid"></aggrid>
+  <aggrid id="grid" class="grid" (clickingrid)="getSelectedRowData($event)"></aggrid>
 
   <h2 padding>Ter info</h2>
 
