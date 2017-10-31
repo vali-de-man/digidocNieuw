@@ -1,5 +1,4 @@
-import { AgGridModule } from 'ag-grid-angular/main';
-import { AggridComponent } from './../../components/aggrid/aggrid';
+import { SharedAgGridModule } from './../../app/app.shared.module';
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { InboxenSubPage } from './inboxenSub';
@@ -7,11 +6,11 @@ import { InboxenSubPage } from './inboxenSub';
 @NgModule({
   declarations: [
     InboxenSubPage,
-    AggridComponent
+
   ],
   imports: [
     IonicPageModule.forChild(InboxenSubPage),
-    AgGridModule.withComponents([])
+    SharedAgGridModule
   ],
 })
 export class InboxenSubPageModule { }
