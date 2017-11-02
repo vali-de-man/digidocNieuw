@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import {GridOptions} from 'ag-grid/main';
 
 @Component({
@@ -9,6 +9,8 @@ export class AfgerondwerkgridComponent {
     public gridOptions:GridOptions;
     public rowData:any[];
     public columnDefs:any[];
+
+    @Output() clickingrid = new EventEmitter();
 
   constructor() {
     this.gridOptions = <GridOptions>{};
@@ -37,5 +39,16 @@ export class AfgerondwerkgridComponent {
         enableSorting:true,
         rowSelection:'single'
     };
+}
+
+public getTitleParam() {
+  var nodeData = this.gridOptions.api.getSelectedNodes();
+  if(nodeData["0"].data.onderwerp == null){
+      //We do nothing in this case, the user has clicked in the grid but not selected a row.
+      //Retrieving the selected rowData would yield an error.
+  } else{
+  let onderwerp = nodeData["0"].data.onderwerp;
+  this.clickingrid.emit(onderwerp);
+  }
 }
 }
