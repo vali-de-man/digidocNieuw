@@ -10,7 +10,7 @@ import { InboxenSubPage } from './inboxenSub';
   ],
   imports: [
     IonicPageModule.forChild(InboxenSubPage),
-    SharedAgGridModule
+    SharedAgGridModule,
   ],
 })
 export class InboxenSubPageModule { }

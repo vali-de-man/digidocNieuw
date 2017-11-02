@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import {GridOptions} from 'ag-grid/main';
 
 @Component({
-  selector: 'aggrid',
-  templateUrl: 'aggrid.html'
+  selector: 'opentaakdocumentengrid',
+  templateUrl: 'opentaakdocumentengrid.html'
 })
-export class AggridComponent {
+export class OpentaakdocumentengridComponent {
     public gridOptions:GridOptions;
     public rowData:any[];
     public columnDefs:any[];
@@ -20,9 +20,9 @@ export class AggridComponent {
         {headerName: "Volgnummer" ,field: "volgnummer"}
     ];
     this.rowData = [
-        {onderwerp: "WOB verzoek ABCD", werkmapnummer: "20170005948", ontvangstdatum: "15-08-2017", parafenlijn: "FASAM", volgnummer: "1"},
-        {onderwerp: "Burgerbrief nr 1", werkmapnummer: "20170005498", ontvangstdatum: "15-09-2017", parafenlijn: "C/IA hernoemd", volgnummer: "2"},
-        {onderwerp: "Inkoop, inhuur, gunning J. Jansen", werkmapnummer: "20170005497", ontvangstdatum: "14-09-2017", parafenlijn: "BABD", volgnummer: "3"}
+        {onderwerp: "Brief", werkmapnummer: "666333552", ontvangstdatum: "22-08-2017", parafenlijn: "H/H/J", volgnummer: "1"},
+        {onderwerp: "Klachtenbrief", werkmapnummer: "876290111", ontvangstdatum: "09-09-2017", parafenlijn: "DESK/P via S", volgnummer: "2"},
+        {onderwerp: "Antwoord", werkmapnummer: "333388467", ontvangstdatum: "14-09-2017", parafenlijn: "M", volgnummer: "3"}
     ];
     this.handleGridReady();
   }
