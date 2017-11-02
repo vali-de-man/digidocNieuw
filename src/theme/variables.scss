@@ -39,7 +39,7 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222,
   white:    #ffffff,
-  rijksoverheid: #01689b,
+  rijksoverheid: #007bc7,
   rijksoverheidactief: #01688b,
   lichtblauw: #cce0f1,
   witblauw: #e5f0f9
@@ -48,6 +48,11 @@ $colors: (
 $tabs-md-tab-color: #01689b;
 $tabs-md-tab-color-active: #01689b;
 $tabs-md-opacity: 0;
+
+$font-family-base: 'Sans_Web';
+$font-family-ios-base: $font-family-base;
+$font-family-md-base: $font-family-base;
+$font-family-wp-base: $font-family-base;
 
 // App iOS Variables
 // --------------------------------------------------

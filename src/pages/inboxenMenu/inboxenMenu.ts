@@ -1,3 +1,4 @@
+import { InboxenSubPage } from './../inboxenSub/inboxenSub';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
@@ -24,9 +25,8 @@ export class InboxenMenuPage {
   }
 
   push(item) {
-    console.log("clicked on item: ", item);
     var navs = this.tabs.getNavController().getAllChildNavs();
-    navs[1].push('InboxenSubPage');
+    navs[1].push('InboxenSubPage',{titleParam: item});
   }
 
   ionViewDidLoad() {

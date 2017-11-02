@@ -5,7 +5,7 @@
         </button>
 
         <ion-item no-lines class="headeritem" color="rijksoverheid">
-            Burgerbrief nr 1
+            {{title}}
             <div item-end class="searchDiv">
                 <ion-searchbar placeholder="Vul een zoekterm in" class="search"></ion-searchbar>
             </div>
@@ -16,7 +16,7 @@
 
 <ion-content class="burgerbrief-nr-1" padding>
     <ion-item no-lines>
- <button ion-button default color="rijksoverheid">Nieuw document</button> <button ion-button default color="rijksoverheid">Bekijken</button> <button ion-button default color="rijksoverheid">Bewerken</button>
+ <button ion-button default color="rijksoverheid" (click)="naarDocGen()">Nieuw document</button> <button ion-button default color="rijksoverheid">Bekijken</button> <button ion-button default color="rijksoverheid" (click)="naarWordApp()">Bewerken</button>
  <button ion-button default color="rijksoverheid" item-end>Werkstroominfo</button> <button ion-button default color="rijksoverheid" item-end>Afronden</button>
 </ion-item>
 
