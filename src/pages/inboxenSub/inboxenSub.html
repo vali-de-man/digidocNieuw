@@ -3,7 +3,6 @@
     <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
           </button>
-
     <ion-item no-lines class="headeritem" color="rijksoverheid">
      {{title}}
       <div item-end class="searchDiv">
@@ -12,26 +11,36 @@
       <div item-end> <ion-icon name="log-out" (click)="logout()"></ion-icon></div>
     </ion-item>
   </ion-navbar>
-
-
-
 </ion-header>
 
 <ion-content padding>
+    <ion-item no-lines>
+        <button ion-button default color="rijksoverheid" (click)="push()" [disabled]="isDisabled">Open taak</button>
+        <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Werkstroominfo</button>
+        <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
+      </ion-item>
+    <ion-item no-lines>
+        <button ion-button default color="rijksoverheid" (click)="goToSlide(0)">Huidig werk</button>
+        <button ion-button default color="rijksoverheid" (click)="goToSlide(1)">Ter info</button>
+        <button ion-button default color="rijksoverheid" (click)="goToSlide(2)">Afgerond werk</button>
+      </ion-item>
+<ion-slides (ionSlideWillChange)="handleSlideChange($event)" #slides>
+<ion-slide>
 
-  <ion-item no-lines>
-  <button ion-button default color="rijksoverheid" (click)="push()" [disabled]="isDisabled">Open taak</button>
-  <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Werkstroominfo</button>
-  <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
-</ion-item>
+<h2>Huidig werk</h2>
+<huidigwerkgrid (clickingrid)="getSelectedRowData($event)"></huidigwerkgrid>
 
-<h2 padding>Huidig werk</h2>
-  <aggrid id="grid" class="aggrid" (clickingrid)="getSelectedRowData($event)"></aggrid>
+</ion-slide>
+<ion-slide>
 
-  <h2 padding>Ter info</h2>
-  <terinfogrid class="terinfogrid"></terinfogrid>
+<h2>Ter info</h2>
+<terinfogrid (clickingrid)="getSelectedRowData($event)"></terinfogrid>
 
-  <h2 padding>Afgerond werk</h2>
-<afgerondwerkgrid class="afgerondwerkgrid"></afgerondwerkgrid>
+</ion-slide>
+<ion-slide>
+<h2>Afgerond werk</h2>
+<afgerondwerkgrid (clickingrid)="getSelectedRowData($event)"></afgerondwerkgrid>
+</ion-slide>
+</ion-slides>
 
 </ion-content>

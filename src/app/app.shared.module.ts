@@ -1,6 +1,6 @@
 import { ComponentsModule } from './../components/components.module';
 import { AgGridModule } from 'ag-grid-angular/main';
-import { AggridComponent } from './../components/aggrid/aggrid';
+import { HuidigwerkgridComponent } from './../components/huidigwerkgrid/huidigwerkgrid';
 import { TerinfogridComponent } from './../components/terinfogrid/terinfogrid';
 import { AfgerondwerkgridComponent } from './../components/afgerondwerkgrid/afgerondwerkgrid';
 import { OpentaakdocumentengridComponent } from './../components/opentaakdocumentengrid/opentaakdocumentengrid';
@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AggridComponent,
+    HuidigwerkgridComponent,
     TerinfogridComponent,
     AfgerondwerkgridComponent,
     OpentaakdocumentengridComponent
@@ -18,12 +18,12 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ComponentsModule,
-    AgGridModule.withComponents([]),
+    AgGridModule.withComponents([])
   ],
 
   exports: [
     AgGridModule,
-    AggridComponent,
+    HuidigwerkgridComponent,
     TerinfogridComponent,
     AfgerondwerkgridComponent,
     OpentaakdocumentengridComponent,
