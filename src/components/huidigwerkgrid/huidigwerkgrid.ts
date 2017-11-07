@@ -2,10 +2,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 import { GridOptions } from 'ag-grid/main';
 
 @Component({
-    selector: 'aggrid',
-    templateUrl: 'aggrid.html'
+    selector: 'huidigwerkgrid',
+    templateUrl: 'huidigwerkgrid.html'
 })
-export class AggridComponent {
+export class HuidigwerkgridComponent {
     public gridOptions: GridOptions;
     public rowData: any[];
     public columnDefs: any[];
@@ -43,7 +43,7 @@ export class AggridComponent {
 
 public getTitleParam() {
     var nodeData = this.gridOptions.api.getSelectedNodes();
-    if(nodeData["0"].data.onderwerp == null){
+    if(nodeData.length == 0){
         //We do nothing in this case, the user has clicked in the grid but not selected a row.
         //Retrieving the selected rowData would yield an error.
     } else{

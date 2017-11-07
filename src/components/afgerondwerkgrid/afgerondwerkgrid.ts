@@ -42,13 +42,13 @@ export class AfgerondwerkgridComponent {
 }
 
 public getTitleParam() {
-  var nodeData = this.gridOptions.api.getSelectedNodes();
-  if(nodeData["0"].data.onderwerp == null){
-      //We do nothing in this case, the user has clicked in the grid but not selected a row.
-      //Retrieving the selected rowData would yield an error.
-  } else{
-  let onderwerp = nodeData["0"].data.onderwerp;
-  this.clickingrid.emit(onderwerp);
-  }
+    var nodeData = this.gridOptions.api.getSelectedNodes();
+    if(nodeData.length == 0){
+        //We do nothing in this case, the user has clicked in the grid but not selected a row.
+        //Retrieving the selected rowData would yield an error.
+    } else{
+    let onderwerp = nodeData["0"].data.onderwerp;
+    this.clickingrid.emit(onderwerp);
+    }
 }
 }
