@@ -25,13 +25,13 @@
   <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
 </ion-item>
 
-<h2 padding>Huidig werk</h2>
+<h2>Huidig werk</h2>
   <aggrid id="grid" class="aggrid" (clickingrid)="getSelectedRowData($event)"></aggrid>
 
-  <h2 padding>Ter info</h2>
+  <h2>Ter info</h2>
   <terinfogrid class="terinfogrid"></terinfogrid>
 
-  <h2 padding>Afgerond werk</h2>
-<afgerondwerkgrid class="afgerondwerkgrid"></afgerondwerkgrid>
+  <h2>Afgerond werk</h2>
+  <afgerondwerkgrid class="afgerondwerkgrid"></afgerondwerkgrid>
 
 </ion-content>

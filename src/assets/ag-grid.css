@@ -162,7 +162,7 @@ ag-grid-aurelia {
 
 .ag-dnd-ghost {
   font-size: 14px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family:"RijksoverheidSansWebText", Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
   background: #e5e5e5;
   border: 1px solid black;

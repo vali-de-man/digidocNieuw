@@ -22,6 +22,10 @@ $app-direction: ltr;
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
 
+$font-family-base: "RijksoverheidSansWebText" !default;
+$font-family-ios-base: "RijksoverheidSansWebText";
+$font-family-md-base: "RijksoverheidSansWebText";
+$font-family-wp-base: "RijksoverheidSansWebText";
 
 
 // Named Color Variables
@@ -49,10 +53,6 @@ $tabs-md-tab-color: #01689b;
 $tabs-md-tab-color-active: #01689b;
 $tabs-md-opacity: 0;
 
-$font-family-base: 'Sans_Web';
-$font-family-ios-base: $font-family-base;
-$font-family-md-base: $font-family-base;
-$font-family-wp-base: $font-family-base;
 
 // App iOS Variables
 // --------------------------------------------------
