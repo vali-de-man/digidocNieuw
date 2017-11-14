@@ -1,18 +1,23 @@
 <ion-header no-border>
-  <ion-navbar class="nav" color="white"><img src="../../assets/images/RO_Logo_2_RGB_pos op kleur_x_nl.png" id="img1">
-    <button ion-button menuToggle>
+    <ion-navbar class="nav" color="white"><img src="../../assets/images/RO_Logo_2_RGB_pos op kleur_x_nl.png" id="img1">
+
+      <div>
+       <span >
+         <button title="hamburger menuknop" tabindex=3 ion-button menuToggle icon-only>
           <ion-icon name="menu"></ion-icon>
-        </button>
-
-    <ion-item no-lines class="headeritem" color="rijksoverheid">
-    Algemene werkomgeving
-      <div item-end class="searchDiv">
-        <ion-searchbar placeholder="Vul een zoekterm in" class="search"></ion-searchbar>
+          </button>
+        </span>
       </div>
-      <div item-end> <ion-icon name="log-out" (click)="logout()"></ion-icon></div>
-    </ion-item>
-  </ion-navbar>
 
+      <ion-item no-lines class="headeritem" color="rijksoverheid">
+        <div item-start title="algemene werkomgeving" tabindex=1>Algemene werkomgeving</div>
+        <div item-end>
+          <ion-icon title="logout button" tabindex=2 name="log-out" (click)="logout()"></ion-icon>
+        </div>
+      </ion-item>
 
+    </ion-navbar>
+  </ion-header>
 
-</ion-header>
+<ion-content>
+</ion-content>
