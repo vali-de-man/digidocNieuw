@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { GridOptions } from 'ag-grid/main';
 
 @Component({
@@ -10,6 +10,7 @@ export class HuidigwerkgridComponent {
     public rowData: any[];
     public columnDefs: any[];
 
+    @Input('inboxName') inboxNaam; 
     @Output() clickingrid = new EventEmitter();
 
     constructor() {
@@ -22,9 +23,7 @@ export class HuidigwerkgridComponent {
             { headerName: "Volgnummer", field: "volgnummer" }
         ];
         this.rowData = [
-            { onderwerp: "WOB verzoek ABCD", werkmapnummer: "20170005948", ontvangstdatum: "15-08-2017", parafenlijn: "FASAM", volgnummer: "1" },
-            { onderwerp: "Burgerbrief nr 1", werkmapnummer: "20170005498", ontvangstdatum: "15-09-2017", parafenlijn: "C/IA hernoemd", volgnummer: "2" },
-            { onderwerp: "Inkoop, inhuur, gunning J. Jansen", werkmapnummer: "20170005497", ontvangstdatum: "14-09-2017", parafenlijn: "BABD", volgnummer: "3" }
+            { onderwerp: "Dummyrij", werkmapnummer: "voor", ontvangstdatum: "initialisatie", parafenlijn: "van", volgnummer: "gridoptions" }
         ];
         this.handleGridReady();
     }
@@ -39,6 +38,15 @@ export class HuidigwerkgridComponent {
             enableSorting: true,
             rowSelection: 'single'
         };
+}
+
+ngAfterViewInit(){
+    this.rowData = [
+        { onderwerp: "Data", werkmapnummer: "voor", ontvangstdatum: "inbox", parafenlijn: ":", volgnummer: this.inboxNaam },
+        { onderwerp: "WOB verzoek ABCD", werkmapnummer: "20170005948", ontvangstdatum: "15-08-2017", parafenlijn: "FASAM", volgnummer: "1" },
+        { onderwerp: "Burgerbrief nr 1", werkmapnummer: "20170005498", ontvangstdatum: "15-09-2017", parafenlijn: "C/IA hernoemd", volgnummer: "2" },
+        { onderwerp: "Inkoop, inhuur, gunning J. Jansen", werkmapnummer: "20170005497", ontvangstdatum: "14-09-2017", parafenlijn: "BABD", volgnummer: "3" }
+    ];
 }
 
 public getTitleParam() {

@@ -5,7 +5,7 @@
         </button>
 
         <ion-item no-lines class="headeritem" color="rijksoverheid">
-            {{title}}
+            {{onderwerp}}
             <div item-end class="searchDiv">
                 <ion-searchbar placeholder="Vul een zoekterm in" class="search"></ion-searchbar>
             </div>
@@ -14,14 +14,18 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content class="burgerbrief-nr-1" padding>
-    <ion-item no-lines>
- <button ion-button default color="rijksoverheid" (click)="naarDocGen()">Nieuw document</button> <button ion-button default color="rijksoverheid">Bekijken</button> <button ion-button default color="rijksoverheid" (click)="naarWordApp()">Bewerken</button>
- <button ion-button default color="rijksoverheid" item-end>Werkstroominfo</button> <button ion-button default color="rijksoverheid" item-end>Afronden</button>
+<ion-content padding>
+<ion-item no-lines>
+ <button ion-button default color="rijksoverheid" *ngIf="smallScreen" menuToggle><ion-icon name="menu"></ion-icon></button>
+ <button ion-button default color="rijksoverheid" (click)="naarDocGen()">Nieuw document</button> 
+<button ion-button default color="rijksoverheid" [disabled]="isDisabled">Bekijken</button> 
+<button ion-button default color="rijksoverheid" (click)="naarWordApp()" [disabled]="isDisabled">Bewerken</button>
+ <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Werkstroominfo</button>
+  <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
 </ion-item>
 
     <h2>Documenten</h2>
+    <opentaakdocumentengrid class="opentaakdocumentengrid" (clickingrid)="getSelectedRowData($event)" (contextmenu)="presentPopover($event)" padding></opentaakdocumentengrid>
 
-    <opentaakdocumentengrid class="opentaakdocumentengrid"></opentaakdocumentengrid>
 
 </ion-content>

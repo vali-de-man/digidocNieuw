@@ -7,10 +7,14 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
+import {ContextMenuInboxenSubComponent } from './../components/context-menu-inboxen-sub/context-menu-inboxen-sub';
+import { ContextMenuInboxenSub2Component } from './../components/context-menu-inboxen-sub2/context-menu-inboxen-sub2';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    ContextMenuInboxenSubComponent,
+    ContextMenuInboxenSub2Component
   ],
   imports: [
     BrowserModule,
@@ -18,7 +22,9 @@ import { MyApp } from './app.component';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    ContextMenuInboxenSubComponent,
+    ContextMenuInboxenSub2Component
   ],
   providers: [
     StatusBar,

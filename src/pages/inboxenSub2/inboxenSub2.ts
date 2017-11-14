@@ -1,6 +1,7 @@
+import {ContextMenuInboxenSub2Component } from './../../components/context-menu-inboxen-sub2/context-menu-inboxen-sub2';
 import { Functions } from './../../providers/functions/functions';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -8,11 +9,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'inboxenSub2.html'
 })
 export class InboxenSub2Page {
-  public title;
-  // var GUID = CMIS link that asks the document concerned what its GUID is.
+  public onderwerp;
+  public isDisabled = true;
+  public taakNaam;
+  
+  public smallScreen = window.innerWidth<768;
+  constructor(public popOver: PopoverController, private functions: Functions, public navCtrl: NavController, public navParams: NavParams) {
+   this.onderwerp = navParams.get("titleParam");
+  }
 
-  constructor(private functions: Functions, public navCtrl: NavController, public navParams: NavParams) {
-   this.title = navParams.get("titleParam");
+  presentPopover(contextmenu) {
+    let popover = this.popOver.create(ContextMenuInboxenSub2Component, this);
+    popover.present({
+      ev: contextmenu
+    });
+    return false;
+  }
+
+  getSelectedRowData(taaknaam){
+    this.taakNaam = taaknaam;
+    this.isDisabled = false;
   }
 
   public naarWordApp(){
@@ -26,13 +42,6 @@ export class InboxenSub2Page {
   public logout() {
     this.functions.logout();
   }
-
-  /*
-  public officeWebApp(GUID){
-    let GUID = GUID;
-    this.functions.officeWebApp(GUID);
-  }
-*/
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InboxenSub2Page');

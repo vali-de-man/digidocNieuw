@@ -1,6 +1,6 @@
 import { TabsPage } from './../tabs/tabs';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,12 +9,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SettingsMenuPage {
 
-  constructor(private tabs: TabsPage, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public menuCtrl: MenuController, private tabs: TabsPage, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   push(pageToPush) {
     var navs = this.tabs.getNavController().getAllChildNavs();
     navs[1].push(pageToPush);
+  }
+
+  closeMenu(){
+    this.menuCtrl.close();
   }
 
   ionViewDidLoad() {

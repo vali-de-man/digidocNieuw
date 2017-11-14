@@ -15,6 +15,7 @@
 
 <ion-content padding>
     <ion-item no-lines>
+        <button ion-button default color="rijksoverheid" *ngIf="smallScreen" menuToggle><ion-icon name="menu"></ion-icon></button>
         <button ion-button default color="rijksoverheid" (click)="push()" [disabled]="isDisabled">Open taak</button>
         <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Werkstroominfo</button>
         <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
@@ -28,18 +29,18 @@
 <ion-slide>
 
 <h2>Huidig werk</h2>
-<huidigwerkgrid (clickingrid)="getSelectedRowData($event)"></huidigwerkgrid>
+<huidigwerkgrid [inboxName]="getTitle()" (clickingrid)="getSelectedRowData($event)" (contextmenu)="presentPopover($event)"></huidigwerkgrid>
 
 </ion-slide>
 <ion-slide>
 
 <h2>Ter info</h2>
-<terinfogrid (clickingrid)="getSelectedRowData($event)"></terinfogrid>
+<terinfogrid (clickingrid)="getSelectedRowData($event)" (contextmenu)="presentPopover($event)"></terinfogrid>
 
 </ion-slide>
 <ion-slide>
 <h2>Afgerond werk</h2>
-<afgerondwerkgrid (clickingrid)="getSelectedRowData($event)"></afgerondwerkgrid>
+<afgerondwerkgrid (clickingrid)="getSelectedRowData($event)" (contextmenu)="presentPopover($event)"></afgerondwerkgrid>
 </ion-slide>
 </ion-slides>
 

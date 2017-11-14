@@ -1,8 +1,8 @@
+import {ContextMenuInboxenSubComponent } from './../../components/context-menu-inboxen-sub/context-menu-inboxen-sub';
 import { TabsPage } from './../tabs/tabs';
 import { Functions } from './../../providers/functions/functions';
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams, Slides, PopoverController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,13 +15,26 @@ export class InboxenSubPage {
   public isDisabled = true;
   @ViewChild(Slides) slides: Slides;
   
-  constructor(private tabs: TabsPage, private functions: Functions, public navCtrl: NavController, public navParams: NavParams) {
+  public smallScreen = window.innerWidth<768;
+  constructor(public popOver: PopoverController, private tabs: TabsPage, private functions: Functions, public navCtrl: NavController, public navParams: NavParams) {
     this.title = navParams.get("titleParam");
  }
+
+ presentPopover(contextmenu) {
+  let popover = this.popOver.create(ContextMenuInboxenSubComponent, this);
+  popover.present({
+    ev: contextmenu
+  });
+  return false;
+}
 
  ngAfterViewInit(){
 this.slides.lockSwipes(true);
 this.slides.autoHeight = true;
+ }
+
+ getTitle(){
+   return this.title;
  }
 
  goToSlide(index) {

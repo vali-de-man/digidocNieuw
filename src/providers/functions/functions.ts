@@ -14,13 +14,4 @@ export class Functions {
     });
   }
 
-  /*
-  public officeWebApp(GUID){
-//De GUID van het betreffende document moet bekend zijn.
-    let GUID = GUID;
-    let URL = "webAppURL" + "?GUID=" + GUID;
-    window.open("http://'URL','_blank','location=no');
-  }
-  */
-
 }

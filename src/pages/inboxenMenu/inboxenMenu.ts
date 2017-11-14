@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 
 @IonicPage()
@@ -20,12 +20,16 @@ export class InboxenMenuPage {
     'PERSOONLIJKE INBOX'
   ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private tabs: TabsPage) {
+  constructor(public menuCtrl: MenuController, public navCtrl: NavController, public navParams: NavParams, private tabs: TabsPage) {
   }
 
   push(item) {
     var navs = this.tabs.getNavController().getAllChildNavs();
     navs[1].push('InboxenSubPage',{titleParam: item});
+  }
+
+  closeMenu(){
+    this.menuCtrl.close();
   }
 
   ionViewDidLoad() {

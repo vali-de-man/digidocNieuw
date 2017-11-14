@@ -9,6 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AlgemeenSubPage {
 
+  public smallScreen = window.innerWidth<768;
   constructor(private functions: Functions, public navCtrl: NavController, public navParams: NavParams) {
   }
 
