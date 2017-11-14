@@ -1,0 +1,8 @@
+<ion-content class="inboxen" padding>
+
+  <h2>Inboxen</h2>
+  <ion-list>
+    <button ion-button block color="rijksoverheid" *ngFor="let item of items" (click)="closeMenu(); push(item);"><ion-item color="rijksoverheid">{{item}}<ion-badge item-end color="light">{{item.length}}</ion-badge></ion-item></button>
+  </ion-list>
+
+</ion-content>

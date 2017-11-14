@@ -1,0 +1,295 @@
+[33mcommit 5ef6a7c04cf2ed00be39d17451cdf16945e6e887[m[33m ([m[1;36mHEAD -> [m[1;32mwebInterfaceSharedGrids[m[33m)[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Tue Oct 31 14:00:15 2017 +0100
+
+    Met shared grids op scherm en 2 en 3
+
+[33mcommit 995c59361edcb12eeb94896ece729745bece91cf[m[33m ([m[1;32mwebInterface[m[33m)[m
+Merge: 46b1510 c4c6ecb
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Tue Oct 24 09:56:58 2017 +0200
+
+    Merge branch 'webInterface' of https://github.com/vali-de-man/digidocNieuw into webInterface
+
+[33mcommit 46b1510b1772fe2f678d21395a9c662b1968dac5[m
+Merge: 367c475 bb3f24a
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Tue Oct 24 09:56:19 2017 +0200
+
+    Merge branch 'webInterface' of https://github.com/vali-de-man/digidocNieuw into webInterface
+    
+    # Conflicts:
+    #       src/pages/tabs/tabs.html
+    #       src/pages/tabs/tabs.ts
+
+[33mcommit c4c6ecb0b731f1f877b13b6aa0474651604fcd6e[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Fri Oct 20 14:49:31 2017 +0200
+
+    Stijlaanpassingen headers en inlogpagina
+
+[33mcommit a73eef94125d4bac171cc5353ae3c6b3dd9c187b[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Wed Oct 18 13:08:40 2017 +0200
+
+    Uitbreiding grid
+
+[33mcommit 7dda48d8af635975682a2e50deced6fda4f71a34[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Wed Oct 18 10:28:05 2017 +0200
+
+    De ag-grid werkt
+
+[33mcommit 14083136a543d37fcbac0b3a0070318c03dec651[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Mon Oct 16 10:10:26 2017 +0200
+
+    Aanpassingen package.json
+
+[33mcommit 40bce6cabbfe93003aa40c346ded963e73be3dec[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Wed Oct 11 15:40:08 2017 +0200
+
+    tests
+
+[33mcommit 367c4756b3e49b39043289c7bc8bb7bb57656091[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Wed Oct 11 09:32:36 2017 +0200
+
+    pull new version
+
+[33mcommit 991a411a3042659c86f2961173e00c37d52d064e[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: 19f7926 a955a6a
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Wed Oct 11 09:25:06 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/home/home.html
+
+[33mcommit bb3f24a9b76abddfb08d3f765960684c06a91033[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Tue Oct 10 12:15:20 2017 +0200
+
+    Resultaat refactoring 10-10-2017
+
+[33mcommit 0e74e9a52cceccd85e3157f890e30b28b17f669f[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Mon Oct 9 09:47:39 2017 +0200
+
+    bla
+
+[33mcommit 19f7926256f9b8ebf36f37b660dee8d6eee89907[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Oct 6 15:19:20 2017 +0200
+
+    patsieflatsie
+
+[33mcommit a955a6a511826008e17201cb34e8a238f170de00[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 18173e0 34f9f42
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Fri Oct 6 15:16:45 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/home/home.scss
+    #       src/pages/login/login.html
+    #       src/pages/login/login.scss
+
+[33mcommit 18173e07be9337dba5febde58a192b6b6a5723fd[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Fri Oct 6 15:04:50 2017 +0200
+
+    Een load nieuwe pages in de staging
+
+[33mcommit 34f9f4217bb496bd883c8beeba24f5079670a51c[m
+Merge: aedbd62 c8b1d96
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Oct 6 14:33:21 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/desktoplayout-root/desktoplayout-root.html
+    #       src/pages/desktoplayout-root/desktoplayout-root.scss
+    #       src/pages/desktoplayout/desktoplayout.html
+
+[33mcommit aedbd62ef26e7fea8fe7c5094c8c90ca481a683a[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Thu Oct 5 16:00:06 2017 +0200
+
+    niets veranderd
+
+[33mcommit c8b1d9649c85818ff4ef23156c9e1e45deef43c4[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Thu Oct 5 15:59:28 2017 +0200
+
+    Hatsieflatsie borrelen
+
+[33mcommit c26a2e214a6bbc2ebe29cbbb6579c3a7aa6a498f[m
+Merge: fd5128c f7a6516
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Thu Oct 5 11:53:36 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/desktoplayout/desktoplayout.html
+
+[33mcommit fd5128c048622042e6099e441e91f106abd32da1[m
+Merge: d5d9e0d 140f705
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Thu Oct 5 11:46:00 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/inboxen/inboxen.html
+    #       src/pages/inboxen/inboxen.ts
+
+[33mcommit f7a651641ce3c5e69632459a54b3170017e240b0[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Thu Oct 5 11:45:37 2017 +0200
+
+    Donderdag ochtend
+
+[33mcommit d5d9e0d9114e83fa4a657346be9fd253dcf0e74f[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Tue Oct 3 09:07:42 2017 +0200
+
+    bla
+
+[33mcommit 140f7056394b189297ed7e10b4bb8d66b12d8c84[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Fri Sep 29 16:06:04 2017 +0200
+
+    Vrijdagmiddag
+
+[33mcommit 86e0f9865d1847f7f86d758ff9113166a00e8ba8[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Thu Sep 28 16:20:59 2017 +0200
+
+    Commit: aan schone app beginnen met de kennis van nu?
+
+[33mcommit 2fdbcb1c28fd458ac90b66ab5da002b56fbd32fd[m
+Merge: a4834fc ef7e619
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Sep 22 13:53:46 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/home/home.html
+
+[33mcommit a4834fc871b6212284c5beb2b9e149b8f9d1bbe4[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Sep 22 13:47:39 2017 +0200
+
+    nog eens
+
+[33mcommit 4b09a2b7352d04f2f731cf80618eeace681a1965[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Sep 22 13:45:55 2017 +0200
+
+    commit vr 22/9/17 vlak voor demo
+
+[33mcommit ef7e619ee8a16171e999dbe58b5e591a2d25dab6[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Fri Sep 22 13:43:58 2017 +0200
+
+    Voor demo
+
+[33mcommit 7e1ea832f82426532b6d8c68bd8a6619146bc1ff[m
+Merge: d346ff6 d8c1509
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Sep 22 11:56:51 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/pages/home/home.html
+
+[33mcommit d346ff65a261e0a0400b14e3231dae41cb316b2c[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Fri Sep 22 11:53:48 2017 +0200
+
+    merge vr 22/9/17 12:00
+
+[33mcommit d8c1509baed994381b9820fd7ead3fbb6f818b6f[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Fri Sep 22 11:51:57 2017 +0200
+
+    Includes popover
+
+[33mcommit ac4395f7aa11440b258e671bc7cf932736d7d208[m
+Merge: 55ee8ce c5d1e17
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Thu Sep 21 17:14:57 2017 +0200
+
+    Merge branch 'master' of https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       src/app/app.module.ts
+
+[33mcommit f721e351b7dd56b875b766b6d4fbd1761a08731b[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Thu Sep 21 16:35:41 2017 +0200
+
+    Commit voor naar huis
+
+[33mcommit 55ee8cee043dfa7d73f24e0da5d7f8632bb004ed[m
+Merge: 1d56a71 09eac0d
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Thu Sep 21 12:38:41 2017 +0200
+
+    Merge https://github.com/vali-de-man/digidocNieuw
+    
+    # Conflicts:
+    #       README.md
+    #       config.xml
+    #       ionic.config.json
+    #       package.json
+    #       src/app/app.component.ts
+    #       src/app/app.module.ts
+    #       src/app/app.scss
+    #       src/pages/home/home.html
+    #       src/pages/home/home.scss
+    #       src/pages/home/home.ts
+
+[33mcommit c5d1e1701040eed9b97ccab4393a4d6c9dd2de82[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Thu Sep 21 12:36:50 2017 +0200
+
+    Nu wel zeven nieuwe files
+
+[33mcommit cfa1979f31f7ef4b70cff46a4b62482c70d899ef[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Thu Sep 21 12:35:14 2017 +0200
+
+    Zeven nieuwe files
+
+[33mcommit 1d56a71e6b25ddb2de130f80f63372f37d49c748[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Tue Sep 19 16:30:57 2017 +0200
+
+    hoi
+
+[33mcommit 4ccdea2f8f5cf8b6d92604000f5443c204898e1e[m[33m ([m[1;31mionic/master[m[33m)[m
+Author: pniemantsverdriet <pniemantsverdriet@me.com>
+Date:   Tue Sep 19 16:16:03 2017 +0200
+
+    Initial commit
+
+[33mcommit 09eac0d7eeae1412cf9f75ce2caa20df0aa4bd68[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Tue Sep 19 15:02:13 2017 +0200
+
+    Alle files
+
+[33mcommit 19a77f6a1b828e0560a0cbb248c77af0c75b64d4[m
+Author: Valentijn <vali-de-man@hotmail.com>
+Date:   Tue Sep 19 14:50:32 2017 +0200
+
+    initial commit
