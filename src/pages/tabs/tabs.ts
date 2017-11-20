@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { PopoverController } from 'ionic-angular';
 import { MenuController } from 'ionic-angular';
@@ -34,6 +34,11 @@ export class TabsPage {
       position: 'middle'
     });
     toast.present();
+  }
+
+  escapeGrid(){
+    var navs = this.getNavController().getAllChildNavs();
+    navs[0].select(1);
   }
 
   ionViewDidLoad() {

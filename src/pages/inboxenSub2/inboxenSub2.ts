@@ -32,7 +32,7 @@ export class InboxenSub2Page {
   }
 
   public naarWordApp(){
-    window.open('https://d.docs.live.net/7a7909fe2fd9be5e/Documents/Document%2011.docx','_blank','location=no');
+    window.open('http://localhost:8080/CrunchifyRESTJerseyExample/we.html','_blank','location=no');
   }
 
   public naarDocGen(){

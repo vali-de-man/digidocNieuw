@@ -58,9 +58,13 @@ handleSlideChange(slideChange){
   }
 
   push(){ 
+    if(this.onderwerp == null){
+      //Don't go to next page if pagetitle is unknown.
+    } else {
     var navs = this.tabs.getNavController().getAllChildNavs();
     navs[1].push('InboxenSub2Page',{titleParam: this.onderwerp});
   }
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InboxenSubPage');

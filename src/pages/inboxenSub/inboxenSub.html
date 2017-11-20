@@ -21,7 +21,7 @@
         <button ion-button default color="rijksoverheid" item-end [disabled]="isDisabled">Afronden</button>
       </ion-item>
     <ion-item no-lines>
-        <button ion-button default color="rijksoverheid" (click)="goToSlide(0)">Huidig werk</button>
+        <button ion-button default color="rijksoverheid" (click)="goToSlide(0)" id="huidigwerk">Huidig werk</button>
         <button ion-button default color="rijksoverheid" (click)="goToSlide(1)">Ter info</button>
         <button ion-button default color="rijksoverheid" (click)="goToSlide(2)">Afgerond werk</button>
       </ion-item>
@@ -29,7 +29,7 @@
 <ion-slide>
 
 <h2>Huidig werk</h2>
-<huidigwerkgrid [inboxName]="getTitle()" (clickingrid)="getSelectedRowData($event)" (contextmenu)="presentPopover($event)"></huidigwerkgrid>
+<huidigwerkgrid [inboxName]="getTitle()" (keyup.enter)="push()" (clickingrid)="getSelectedRowData($event)" (contextmenu)="presentPopover($event)"></huidigwerkgrid>
 
 </ion-slide>
 <ion-slide>

@@ -1,6 +1,8 @@
 <div>
-  <ag-grid-angular #agGrid style="width: 95%; height: 300px;" (click)="getTitleParam()" padding class="ag-fresh"
+  <ag-grid-angular #agGrid style="width: 95%; height: 300px;" (keyup.enter)="getTitleParam()" (keyup.escape)="escapeGrid()" (click)="getTitleParam()" padding class="ag-fresh"
 [gridOptions]="gridOptions"
 [columnDefs]="columnDefs"
-[rowData]="rowData"></ag-grid-angular>
+[rowData]="rowData"
+(gridReady)="onGridReady($event)"
+></ag-grid-angular>
 </div>
