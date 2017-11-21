@@ -9,8 +9,10 @@ export class OpentaakdocumentengridComponent {
     public gridOptions:GridOptions;
     public rowData:any[];
     public columnDefs:any[];
+    private officeApp;
 
     @Output() clickingrid = new EventEmitter();
+
   constructor() {
     this.gridOptions = <GridOptions>{};
     this.columnDefs = [
@@ -21,9 +23,9 @@ export class OpentaakdocumentengridComponent {
         {headerName: "Volgnummer" ,field: "volgnummer"}
     ];
     this.rowData = [
-        {onderwerp: "Brief", werkmapnummer: "666333552", ontvangstdatum: "22-08-2017", parafenlijn: "H/H/J", volgnummer: "1"},
-        {onderwerp: "Klachtenbrief", werkmapnummer: "876290111", ontvangstdatum: "09-09-2017", parafenlijn: "DESK/P via S", volgnummer: "2"},
-        {onderwerp: "Antwoord", werkmapnummer: "333388467", ontvangstdatum: "14-09-2017", parafenlijn: "M", volgnummer: "3"}
+        {onderwerp: "Word", werkmapnummer: "666333552", ontvangstdatum: "22-08-2017", parafenlijn: "H/H/J", volgnummer: "1"},
+        {onderwerp: "Excel", werkmapnummer: "876290111", ontvangstdatum: "09-09-2017", parafenlijn: "DESK/P via S", volgnummer: "2"},
+        {onderwerp: "Powerpoint", werkmapnummer: "333388467", ontvangstdatum: "14-09-2017", parafenlijn: "M", volgnummer: "3"}
     ];
     this.handleGridReady();
   }

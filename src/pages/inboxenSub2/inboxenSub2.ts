@@ -31,8 +31,16 @@ export class InboxenSub2Page {
     this.isDisabled = false;
   }
 
-  public naarWordApp(){
+  public naarOfficeOnline(){
+    if(this.taakNaam === "Word"){
     window.open('http://localhost:8080/CrunchifyRESTJerseyExample/we.html','_blank','location=no');
+    }
+    if(this.taakNaam === "Excel"){
+    window.open('excelOnline');
+    } 
+    if (this.taakNaam === "Powerpoint"){
+    window.open('powerpointOnline');
+    }
   }
 
   public naarDocGen(){

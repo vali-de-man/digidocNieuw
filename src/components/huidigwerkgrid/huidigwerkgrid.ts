@@ -39,7 +39,8 @@ export class HuidigwerkgridComponent {
             floatingFilter: true,
             floatingFiltersHeight: 50,
             enableSorting: true,
-            rowSelection: 'single'
+            rowSelection: 'single',
+            suppressMovableColumns: true
         };
 }
 
@@ -50,6 +51,7 @@ ngAfterViewInit(){
         { onderwerp: "Burgerbrief nr 1", werkmapnummer: "20170005498", ontvangstdatum: "15-09-2017", parafenlijn: "C/IA hernoemd", volgnummer: "2" },
         { onderwerp: "Inkoop, inhuur, gunning J. Jansen", werkmapnummer: "20170005497", ontvangstdatum: "14-09-2017", parafenlijn: "BABD", volgnummer: "3" }
     ];
+  console.log(document.querySelector(".ag-row"));
 }
 
 getTitleParam() {
@@ -86,7 +88,7 @@ onGridReady(params) {
             var sort = [
                 {
                   colId: column.colId,
-                  sort: ["asc","desc"]
+                  sort: ['asc','desc']
                 }
               ];
               params.api.setSortModel(sort);
